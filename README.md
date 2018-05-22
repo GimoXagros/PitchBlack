@@ -79,3 +79,21 @@ Versions
 
 0.0.6
  - Biter evolution phase balanced. Evolution won't occur before 1 cycle complete, where it will have about a 20% chance to occur. After 3 cycles, evolution phase will be more difficult and have a 30% chance to occur. During the phase it will be easier to combat the evolution.
+ 
+Versions (Kor)
+---
+0.2.7
+
+ - 사망 음성을 교체하였습니다.
+ 후보1: http://peetoo1.blog.me/40170942089
+ 후보2: http://blog.naver.com/coco9508/110091132016
+ - 전체 문단을 한글화 하였습니다.
+ - 전체 시설의 공해도 생산량을 낮춰습니다. (10 → 2)
+ 
+ 1.0.1
+ 
+ - 최신 버전에 맞게 재설계하였습니다.
+ 
+ 1.0.3
+ 
+ - 밸런스 패치를 하였습니다.

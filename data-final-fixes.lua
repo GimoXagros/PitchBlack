@@ -105,7 +105,7 @@ data:extend({
         flags = {"not-on-map"},
         animations = {
             {
-                filename = "__Pitch_Black__/trans1.png",
+                filename = "__Pitch_Black_kor__/trans1.png",
                 priority = "extra-high",
                 width = 1,
                 height = 1,
@@ -113,7 +113,7 @@ data:extend({
                 animation_speed = 0.5
             },
             {
-                filename = "__Pitch_Black__/trans1.png",
+                filename = "__Pitch_Black_kor__/trans1.png",
                 priority = "extra-high",
                 width = 1,
                 height = 1,
@@ -121,7 +121,7 @@ data:extend({
                 animation_speed = 0.5
             },
             {
-                filename = "__Pitch_Black__/trans1.png",
+                filename = "__Pitch_Black_kor__/trans1.png",
                 priority = "extra-high",
                 width = 1,
                 height = 1,
@@ -129,7 +129,7 @@ data:extend({
                 animation_speed = 0.5
             },
             {
-                filename = "__Pitch_Black__/trans1.png",
+                filename = "__Pitch_Black_kor__/trans1.png",
                 priority = "extra-high",
                 width = 1,
                 height = 1,
@@ -148,7 +148,7 @@ data:extend({
             variations =
             {
                 {
-                    filename = '__Pitch_Black__/scream.ogg',
+                    filename = "__Pitch_Black_kor__/scream.ogg",
                     volume = 1
                 }
             }

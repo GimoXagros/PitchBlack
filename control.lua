@@ -8,8 +8,8 @@ end)
 
 --On mod version different or if mod did not previously exist
 script.on_configuration_changed(function(data)
-    if data.mod_changes and data.mod_changes.Pitch_Black then
-        if not data.mod_changes.Pitch_Black.old_version or data.mod_changes.Pitch_Black.old_version < '0.2.5' then
+    if data.mod_changes and data.mod_changes.PitchBlack then
+        if not data.mod_changes.PitchBlack.old_version or data.mod_changes.PitchBlack.old_version < '0.2.5' then
             if settings.global["pitch-BiterDamageModifier"] then
                 game.forces.enemy.set_ammo_damage_modifier('melee', settings.global["pitch-BiterDamageModifier"].value)
             end
@@ -41,6 +41,12 @@ script.on_event(defines.events.on_tick, function(event)
     --    end
     Main:On_Tick(event)
 end)
+
+script.on_event(defines.events.on_biter_base_built, 
+	function(event)
+		Main:On_BiterBuild(event)
+	end
+)
 
 script.on_event(defines.events.on_runtime_mod_setting_changed, function(event)
     local _, err = pcall(function()
@@ -74,3 +80,11 @@ script.on_event(defines.events.on_player_died, function(event)
         player.surface.create_entity({name = "pitch_explosion", position=player.position})
     end)
 end)
+
+remote.add_interface("PitchBlack", 
+{
+	SkipTimePhase = 
+	function() 
+		Time.SkipPhase()
+	end
+})

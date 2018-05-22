@@ -5,7 +5,7 @@ for _, prototype_type in pairs(data.raw) do
     for _, prototype in pairs(prototype_type) do
         if prototype.energy_source then
             if prototype.energy_source.emissions and prototype.energy_source.emissions > 0.001 then
-                prototype.energy_source.emissions = prototype.energy_source.emissions * 10
+                prototype.energy_source.emissions = prototype.energy_source.emissions * 2
             end
         end
 

@@ -50,11 +50,11 @@ Biters.Phases =
       Title = 'Night Craze',
 
       --Text message(s) displayed when swapping to this phase
-      StartWarnings = {'The biters have begun swarming the landscape!'},
+      StartWarnings = {'바이터 무리가 지평선 너머까지 가득 메우기 시작합니다!'},
       --Hint message
-      HintWarnings = {'Hitting them now will reduce their strength.', 'However, pollution output is agitating them greatly!'},
+      HintWarnings = {'지금 공격하면 바이터들의 힘을 약화시킬수 있습니다.', '그러나, 이미 퍼져버린 오염이 그들의 심기를 긁고 있습니다!'},
       --Text message(s) displayed when repeating this phase
-      ContinueWarnings = {'The biters continue to swarm the landscape.'},
+      ContinueWarnings = {'바이터 무리가 여전히 지평선 너머까지 가득 메우고 있습니다!'},
 
       VariableData =
       {
@@ -179,7 +179,7 @@ Biters.Phases =
           MaxDuration = 720,
 
           --Extra messages that pop up when the phase begins
-          StartExtraWarnings = {'The biters are more active than usual.'},
+          StartExtraWarnings = {'바이터들이 평소보다 활발합니다.'},
           ContinueExtraWarnings = nil,
 
           --Whether the phase can repeat
@@ -274,7 +274,7 @@ Biters.Phases =
           MaxDuration = 720,
 
           --Extra messages that pop up when the phase begins
-          StartExtraWarnings = {'The biters are much more active than usual.'},
+          StartExtraWarnings = {'바이터들이 평소보다 더 활발합니다.'},
           ContinueExtraWarnings = nil,
 
           --Whether the phase can repeat
@@ -351,11 +351,11 @@ Biters.Phases =
       Title = 'Night Growth',
 
       --Text message(s) displayed when swapping to this phase
-      StartWarnings = {'The biter swarm is swelling as they mass around their nests.'},
+      StartWarnings = {'매우 많은 바이터 무리가 그들의 둥지 주변에 넘실거리기 시작합니다.'},
       --Hint message
-      HintWarnings = {'Avoid attacking their nests or you risk provoking a stronger response.', 'Pollution output is agitating them greatly!'},
+      HintWarnings = {'방어 준비가 안된 성급한 공격 시도는 자칫 잘못하면 더 큰 보복으로 이어질 것입니다.', '이미 퍼져버린 오염이 그들의 심기를 긁고 있습니다!'},
       --Text message(s) displayed when repeating this phase
-      ContinueWarnings = {'The biters continue to mass around their nests.'},
+      ContinueWarnings = {'매우 많은 바이터 무리가 여전히 그들의 둥지 주변에 넘실거립니다.'},
 
       VariableData =
       {
@@ -480,7 +480,7 @@ Biters.Phases =
           MaxDuration = 900,
 
           --Extra messages that pop up when the phase begins
-          StartExtraWarnings = {'The biters are more active than usual.'},
+          StartExtraWarnings = {'바이터들이 평소보다 활발합니다.'},
           ContinueExtraWarnings = nil,
 
           --Whether the phase can repeat
@@ -557,11 +557,11 @@ Biters.Phases =
       Title = 'Night Evolution',
 
       --Text message(s) displayed when swapping to this phase
-      StartWarnings = {'The biters have begun evolving rapidly!'},
+      StartWarnings = {'바이터 무리가 급속도로 진화하기 시작합니다!'},
       --Hint message
-      HintWarnings = {'Hit them NOW before they grow in strength.'},
+      HintWarnings = {'그들이 더 강해지기 전에 지금 공격해야합니다.'},
       --Text message(s) displayed when repeating this phase
-      ContinueWarnings = {'The biters are continueing to evolve rapidly!'},
+      ContinueWarnings = {'바이터 무리가 여전히 급속도로 진화하고 있습니다!'},
 
       VariableData =
       {
@@ -763,11 +763,11 @@ Biters.Phases =
       Title = 'Disorientated',
 
       --Text message(s) displayed when swapping to this phase
-      StartWarnings = {'The biters are disorientated!'},
+      StartWarnings = {'바이터 무리가 무기력해지고 있습니다!'},
       --Hint message
-      HintWarnings = {'Hit them now while they are weak.'},
+      HintWarnings = {'그들이 약해있는 지금이 공격 할 기회입니다!'},
       --Text message(s) displayed when repeating this phase
-      ContinueWarnings = {'The biters are continueing to flounder.'},
+      ContinueWarnings = {'바이터 무리는 여전히 무기력합니다.'},
 
       VariableData =
       {
@@ -874,11 +874,11 @@ Biters.Phases =
       Title = 'Dormant',
 
       --Text message(s) displayed when swapping to this phase
-      StartWarnings = {'Biter activity has decreased significantly.'},
+      StartWarnings = {'바이터의 활동이 현저하게 감소했습니다.'},
       --Hint message
-      HintWarnings = {'Attacking & polluting them may provoke them.'},
+      HintWarnings = {'그들에 대한 공격과 오염 확산은 무리를 자극할 수 있습니다.'},
       --Text message(s) displayed when repeating this phase
-      ContinueWarnings = {'Biter activity continues to remain very low.'},
+      ContinueWarnings = {'바이터 무리의 활동은 여전히 낮은 상태를 유지합니다.'},
 
       VariableData =
       {
@@ -985,11 +985,11 @@ Biters.Phases =
       Title = 'Aggitated',
 
       --Text message(s) displayed when swapping to this phase
-      StartWarnings = {'The biters have become aggitated.'},
+      StartWarnings = {'바이터 무리가 동요하고 있습니다.'},
       --Hint message
-      HintWarnings = {'Attacking & polluting them will continue to provoke them.'},
+      HintWarnings = {'그들에 대한 공격과 오염 확산은 무리를 계속 동요시킬 것입니다.'},
       --Text message(s) displayed when repeating this phase
-      ContinueWarnings = {'The biters are aggitated.'},
+      ContinueWarnings = {'바이터 무리는 여전히 동요중입니다.'},
 
       VariableData =
       {
@@ -1321,44 +1321,54 @@ function Biters.StartNewPhase(self, currentState, previousState)
 
   --Apply phase map settings
   local newMapSettings = currentPhaseState.CurrentPhaseVarData.MapSettings
-
+  
   --Apply time settings
   --game.map_settings.enemy_evolution.time_factor = newMapSettings.enemy_evolution.time_factor
   local scale = settings.global["pitch-ScaleEvolutionRate"].value
+  local expansionScale = settings.global["pitch-ExpansionScale"].value
+  if expansionScale > 0 then
+	expansionScale = 100 / expansionScale
+  end
+  
   game.map_settings.enemy_evolution.destroy_factor = newMapSettings.enemy_evolution.destroy_factor * scale
   game.map_settings.enemy_evolution.pollution_factor = newMapSettings.enemy_evolution.pollution_factor * scale
 
   --Apply expansion settings
-  game.map_settings.enemy_expansion.enabled 						= newMapSettings.enemy_expansion.enabled
-  game.map_settings.enemy_expansion.building_coefficient 			= newMapSettings.enemy_expansion.building_coefficient
+  game.map_settings.enemy_expansion.enabled 					= newMapSettings.enemy_expansion.enabled
+  game.map_settings.enemy_expansion.building_coefficient 		= newMapSettings.enemy_expansion.building_coefficient
   game.map_settings.enemy_expansion.max_expansion_distance 		= newMapSettings.enemy_expansion.max_expansion_distance
-  game.map_settings.enemy_expansion.min_player_base_distance 		= newMapSettings.enemy_expansion.min_player_base_distance
-  game.map_settings.enemy_expansion.min_base_spacing				= newMapSettings.enemy_expansion.min_base_spacing
-  game.map_settings.enemy_expansion.min_expansion_cooldown 		= newMapSettings.enemy_expansion.min_expansion_cooldown
-  game.map_settings.enemy_expansion.max_expansion_cooldown 		= newMapSettings.enemy_expansion.max_expansion_cooldown
+  --game.map_settings.enemy_expansion.min_player_base_distance	= newMapSettings.enemy_expansion.min_player_base_distance
+  --game.map_settings.enemy_expansion.min_base_spacing			= newMapSettings.enemy_expansion.min_base_spacing
+  
+  if expansionScale > 0 then
+	game.map_settings.enemy_expansion.min_expansion_cooldown 	= newMapSettings.enemy_expansion.min_expansion_cooldown * expansionScale
+	game.map_settings.enemy_expansion.max_expansion_cooldown 	= newMapSettings.enemy_expansion.max_expansion_cooldown * expansionScale
+  else
+	game.map_settings.enemy_expansion.enabled 					= false
+  end
   game.map_settings.enemy_expansion.settler_group_min_size 		= newMapSettings.enemy_expansion.settler_group_min_size
   game.map_settings.enemy_expansion.settler_group_max_size 		= newMapSettings.enemy_expansion.settler_group_max_size
 
   --Apply unit group settings
-  game.map_settings.unit_group.min_group_gathering_time 			= newMapSettings.unit_group.min_group_gathering_time
-  game.map_settings.unit_group.max_group_gathering_time 			= newMapSettings.unit_group.max_group_gathering_time
+  game.map_settings.unit_group.min_group_gathering_time 		= newMapSettings.unit_group.min_group_gathering_time
+  game.map_settings.unit_group.max_group_gathering_time 		= newMapSettings.unit_group.max_group_gathering_time
   game.map_settings.unit_group.max_wait_time_for_late_members 	= newMapSettings.unit_group.max_wait_time_for_late_members
 
-  LogDebug('enemy_evolution.time_factor - ' .. newMapSettings.enemy_evolution.time_factor
-    .. ', enemy_evolution.destroy_factor - ' .. newMapSettings.enemy_evolution.destroy_factor
-    .. ', enemy_evolution.pollution_factor - ' .. newMapSettings.enemy_evolution.pollution_factor
-    .. ', enemy_expansion.enabled - ' .. tostring(newMapSettings.enemy_expansion.enabled)
-    .. ', enemy_expansion.building_coefficient - ' .. newMapSettings.enemy_expansion.building_coefficient
-    .. ', enemy_expansion.max_expansion_distance - ' .. newMapSettings.enemy_expansion.max_expansion_distance
-    .. ', enemy_expansion.min_player_base_distance - ' .. newMapSettings.enemy_expansion.min_player_base_distance
-    .. ', enemy_expansion.min_base_spacing - ' .. newMapSettings.enemy_expansion.min_base_spacing
-    .. ', enemy_expansion.min_expansion_cooldown - ' .. newMapSettings.enemy_expansion.min_expansion_cooldown
-    .. ', enemy_expansion.max_expansion_cooldown - ' .. newMapSettings.enemy_expansion.max_expansion_cooldown
-    .. ', enemy_expansion.settler_group_min_size - ' .. newMapSettings.enemy_expansion.settler_group_min_size
-    .. ', enemy_expansion.settler_group_max_size - ' .. newMapSettings.enemy_expansion.settler_group_max_size
-    .. ', unit_group.min_group_gathering_time - ' .. newMapSettings.unit_group.min_group_gathering_time
-    .. ', unit_group.max_group_gathering_time - ' .. newMapSettings.unit_group.max_group_gathering_time
-    .. ', unit_group.max_wait_time_for_late_members - ' .. newMapSettings.unit_group.max_wait_time_for_late_members
+  LogDebug('enemy_evolution.time_factor - ' .. game.map_settings.enemy_evolution.time_factor
+    .. ', enemy_evolution.destroy_factor - ' .. game.map_settings.enemy_evolution.destroy_factor
+    .. ', enemy_evolution.pollution_factor - ' .. game.map_settings.enemy_evolution.pollution_factor
+    .. ', enemy_expansion.enabled - ' .. tostring(game.map_settings.enemy_expansion.enabled)
+    .. ', enemy_expansion.building_coefficient - ' .. game.map_settings.enemy_expansion.building_coefficient
+    .. ', enemy_expansion.max_expansion_distance - ' .. game.map_settings.enemy_expansion.max_expansion_distance
+    --.. ', enemy_expansion.min_player_base_distance - ' .. game.map_settings.enemy_expansion.min_player_base_distance
+    --.. ', enemy_expansion.min_base_spacing - ' .. game.map_settings.enemy_expansion.min_base_spacing
+    .. ', enemy_expansion.min_expansion_cooldown - ' .. game.map_settings.enemy_expansion.min_expansion_cooldown
+    .. ', enemy_expansion.max_expansion_cooldown - ' .. game.map_settings.enemy_expansion.max_expansion_cooldown
+    .. ', enemy_expansion.settler_group_min_size - ' .. game.map_settings.enemy_expansion.settler_group_min_size
+    .. ', enemy_expansion.settler_group_max_size - ' .. game.map_settings.enemy_expansion.settler_group_max_size
+    .. ', unit_group.min_group_gathering_time - ' .. game.map_settings.unit_group.min_group_gathering_time
+    .. ', unit_group.max_group_gathering_time - ' .. game.map_settings.unit_group.max_group_gathering_time
+    .. ', unit_group.max_wait_time_for_late_members - ' .. game.map_settings.unit_group.max_wait_time_for_late_members
   )
 
   currentPhaseState.Messages = {}
@@ -1427,6 +1437,7 @@ function Biters.UpdateEvolution(_, currentState, _, _)
   local currentBiterPhaseVarData = currentBiterPhaseState.CurrentPhaseVarData
 
   local scaleEvolutionRate =  settings.global["pitch-ScaleEvolutionRate"].value
+  local maxEvolution = settings.global["pitch-MaxEvolution"].value * 0.01
 
   local permamnentEvolutionRate = 0.0
 
@@ -1464,7 +1475,9 @@ function Biters.UpdateEvolution(_, currentState, _, _)
   evolutionDelta = evolutionDelta + currentBiterPhaseVarData.MapSettings.enemy_evolution.time_factor
 
   --Set game evolution
-  game.forces.enemy.evolution_factor = math.max(game.forces.enemy.evolution_factor + (evolutionDelta * scaleEvolutionRate), currentBiterState.PermanentEvolution)
+  local calculatedEvolution = math.max(game.forces.enemy.evolution_factor + (evolutionDelta * scaleEvolutionRate), currentBiterState.PermanentEvolution)
+  
+  game.forces.enemy.evolution_factor = math.min(calculatedEvolution, maxEvolution)
 
   LogDebug(
     'Evolution: ' .. game.forces.enemy.evolution_factor
