@@ -5,7 +5,7 @@ require 'Libs/Utility/generic'
 --PHASE or TIME PHASE =  (day, dusk, night etc)
 
 Time = {} --luacheck: allow defined top
-Time.DayLength = settings.global["pitch-DayLength"].value
+Time.DayLength = settings.global["pitch-PhaseLength"].value
 Time.SkipCurrentPhase = false
 
 --The default state of time
@@ -73,10 +73,10 @@ Time.DayPhaseConfig =
     --Data that has conditions that need to be met to be valid, such as cycles complete
     VariableData =
     {
-      {Name = "Day_v1_1", CyclesComplete = 0, MinLength = settings.global["pitch-FirstDayPhaseLength"].value, MaxLength = settings.global["pitch-FirstDayPhaseLength"].value, MinBrightness = 1, MaxBrightness = 1},
-      {Name = "Day_v1_2", CyclesComplete = 1, MinLength = 6, MaxLength = 6, MinBrightness = 0.6, MaxBrightness = 0.6},
-      {Name = "Day_v1_2", CyclesComplete = 2, MinLength = 5, MaxLength = 5, MinBrightness = 0.4, MaxBrightness = 0.5},
-      {Name = "Day_v1_2", CyclesComplete = 3, MinLength = 4, MaxLength = 4, MinBrightness = 0.3, MaxBrightness = 0.4}
+      {Name = "Day_v1_1", CyclesComplete = 0, MinLength = settings.global["pitch-FirstDayPhaseMinLength"].value,	MaxLength = settings.global["pitch-FirstDayPhaseMaxLength"].value,	MinBrightness = settings.global["pitch-FirstDayPhaseMinBrightness"].value,	MaxBrightness = settings.global["pitch-FirstDayPhaseMaxBrightness"].value},
+      {Name = "Day_v1_2", CyclesComplete = 1, MinLength = settings.global["pitch-SecondDayPhaseMinLength"].value,	MaxLength = settings.global["pitch-SecondDayPhaseMaxLength"].value,	MinBrightness = settings.global["pitch-SecondDayPhaseMinBrightness"].value,	MaxBrightness = settings.global["pitch-SecondDayPhaseMaxBrightness"].value},
+      {Name = "Day_v1_3", CyclesComplete = 2, MinLength = settings.global["pitch-ThirdDayPhaseMinLength"].value,	MaxLength = settings.global["pitch-ThirdDayPhaseMaxLength"].value,	MinBrightness = settings.global["pitch-ThirdDayPhaseMinBrightness"].value,	MaxBrightness = settings.global["pitch-ThirdDayPhaseMaxBrightness"].value},
+      {Name = "Day_v1_4", CyclesComplete = 3, MinLength = settings.global["pitch-FourthDayPhaseMinLength"].value,	MaxLength = settings.global["pitch-FourthDayPhaseMaxLength"].value,	MinBrightness = settings.global["pitch-FourthDayPhaseMinBrightness"].value,	MaxBrightness = settings.global["pitch-FourthDayPhaseMaxBrightness"].value}
     }
   }
 
@@ -128,10 +128,10 @@ Time.NightPhaseConfig =
     --Data that has conditions that need to be met to be valid, such as cycles complete
     VariableData =
     {
-      {Name = "Night_v1_1", CyclesComplete = 0, MinLength = 1, MaxLength = 1, MinBrightness = 0.0, MaxBrightness = 0.0},
-      {Name = "Night_v1_2", CyclesComplete = 1, MinLength = 2, MaxLength = 2, MinBrightness = 0.0, MaxBrightness = 0.0},
-      {Name = "Night_v1_3", CyclesComplete = 2, MinLength = 2, MaxLength = 2, MinBrightness = 0.0, MaxBrightness = 0.0},
-      {Name = "Night_v1_4", CyclesComplete = 3, MinLength = 3, MaxLength = 3, MinBrightness = 0.0, MaxBrightness = 0.0}
+      {Name = "Night_v1_1", CyclesComplete = 0, MinLength = settings.global["pitch-FirstNightPhaseMinLength"].value,	MaxLength = settings.global["pitch-FirstNightPhaseMaxLength"].value,	MinBrightness = settings.global["pitch-FirstNightPhaseMinBrightness"].value,	MaxBrightness = settings.global["pitch-FirstNightPhaseMaxBrightness"].value},
+      {Name = "Night_v1_2", CyclesComplete = 1, MinLength = settings.global["pitch-SecondNightPhaseMinLength"].value,	MaxLength = settings.global["pitch-SecondNightPhaseMaxLength"].value,	MinBrightness = settings.global["pitch-SecondNightPhaseMinBrightness"].value,	MaxBrightness = settings.global["pitch-SecondNightPhaseMaxBrightness"].value},
+      {Name = "Night_v1_3", CyclesComplete = 2, MinLength = settings.global["pitch-ThirdNightPhaseMinLength"].value,	MaxLength = settings.global["pitch-ThirdNightPhaseMaxLength"].value,	MinBrightness = settings.global["pitch-ThirdNightPhaseMinBrightness"].value,	MaxBrightness = settings.global["pitch-ThirdNightPhaseMaxBrightness"].value},
+      {Name = "Night_v1_4", CyclesComplete = 3, MinLength = settings.global["pitch-FourthNightPhaseMinLength"].value,	MaxLength = settings.global["pitch-FourthNightPhaseMaxLength"].value,	MinBrightness = settings.global["pitch-FourthNightPhaseMinBrightness"].value,	MaxBrightness = settings.global["pitch-FourthNightPhaseMaxBrightness"].value}
     }
   }
 

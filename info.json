@@ -1,9 +1,9 @@
 {
   "name": "Pitch_Black_kor",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "title": "Pitch Black(한국어 버전)",
   "author": "Reapa, Choumiko, Xagros",  
   "homepage": "https://github.com/Choumiko/PitchBlack",
-  "description": "영화\"피치블랙(에이리언 2020)\"을 보신적이 있습니까? 시스템 버그 리포트는 Vin_Diesel@PitchBlackSupport.com으로 연락주세요.\n게임 플레이 시 공해와 경고 메세지를 확인 하시는게 중요합니다.\n새로운 버전이 나올 때 마다 한국어로 번역합니다.\n번역 상 문제는 Xagros로 시스템 상 문제는 Choumiko로 문의주세요.",
+  "description": "영화\"피치블랙(에이리언 2020)\"을 보신적이 있습니까? 시스템 버그 리포트는 Vin_Diesel@PitchBlackSupport.com으로 연락주세요.\n게임 플레이 시 공해와 경고 메세지를 확인 하시는게 중요합니다.\n새로운 버전이 나올 때 마다 한국어로 번역합니다.\n문제가 발생하면 Xagros또는 Choumiko로 문의주세요.",
   "factorio_version": "0.16"
 }
